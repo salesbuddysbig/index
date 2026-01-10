@@ -182,7 +182,6 @@
         .p-final-label { font-size: 11px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom:0;}
         .p-final-amount { font-size: 26px; font-weight: 900; color: var(--accent-color); line-height: 1.1; }
         
-        /* Updated Saved Box */
         .p-saved-box { 
             background: #dcfce7; border-radius: 6px; padding: 6px; 
             color: #166534; font-weight: 700; font-size: 12px; margin-top: 5px;
@@ -774,6 +773,7 @@
                      opdAmount = baseOpd * floaterFactor;
                 }
                 opdAmount = opdAmount * 0.90; 
+                // opdAmount = Math.round(opdAmount); // REMOVED ROUNDING
             }
 
             // 2. Air Ambulance
@@ -1238,8 +1238,14 @@
             overlayRoot.innerHTML = `
                 <div class="pdf-page" id="pdf-page-content">
                     <div class="pdf-header-row">
-                        <div><div class="pdf-title-main">Health Alpha Select</div><div class="pdf-subtitle">Premium Quote Calculation</div></div>
-                        <div style="font-size:11px;">Date: ${new Date().toLocaleDateString()}</div>
+                        <div>
+                            <div class="pdf-title-main">Health Alpha Select</div>
+                            <div class="pdf-subtitle">Premium Quote Calculation</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFkxL3TkvBl2a1hu_Z8gwhK2mBuZBlbYD9ql3gAl6RkDFhMQG7AISp6Sb&s=10" style="height: 40px; margin-bottom:5px;" alt="Logo"><br>
+                            <div style="font-size:11px;">Date: ${new Date().toLocaleDateString()}</div>
+                        </div>
                     </div>
                     <div class="pdf-sec-title">1. Quote Details</div>
                     <table class="pdf-details-tbl">
