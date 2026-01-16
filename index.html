@@ -287,7 +287,7 @@
 
             </div>
         </div>
-        <div class="footer">Version 8.5 (Alpha Split) | Internal Use Only</div>
+        <div class="footer">Version 8.6 (Fixes) | Internal Use Only</div>
     </div>
 
     <div id="selection" class="page">
@@ -303,7 +303,6 @@
                 </div>
                 <div class="arrow-icon">&#10095;</div>
             </div>
-            
             <div class="action-card" onclick="openExternal('superhealthcalc.html', 'Super Health')">
                 <div class="card-content">
                     <div class="card-icon-box icon-pink">🦸</div>
@@ -319,9 +318,7 @@
             <button class="back-btn" onclick="navigate('selection')">&#8592;</button>
             <div class="page-title">Select Variant</div>
         </div>
-        <p style="text-align:center; color:#666; margin-bottom:15px; font-size:13px;">Choose the Health Alpha plan type:</p>
         <div class="dashboard-grid">
-            
             <div class="action-card" onclick="openExternal('alpha_select.html', 'Alpha Select')">
                 <div class="card-content">
                     <div class="card-icon-box icon-blue">S</div>
@@ -329,7 +326,6 @@
                 </div>
                 <div class="arrow-icon">&#10095;</div>
             </div>
-
             <div class="action-card" onclick="openExternal('alpha_ultimate.html', 'Alpha Ultimate')">
                 <div class="card-content">
                     <div class="card-icon-box icon-purple">U</div>
@@ -337,7 +333,6 @@
                 </div>
                 <div class="arrow-icon">&#10095;</div>
             </div>
-
         </div>
     </div>
 
@@ -354,7 +349,6 @@
         
         <div id="statusLoading" class="data-status status-loading">⌛ Connecting to database...</div>
         <div id="statusError" class="data-status status-error">❌ Connection Failed.</div>
-
         <div id="manualUpload" class="file-upload-wrapper">
             <p style="font-size:11px; margin-bottom:5px; color:#666;">Could not auto-fetch. Please select <b>network_hospitals.xlsx</b> manually:</p>
             <label class="custom-file-upload">
@@ -372,13 +366,11 @@
                     <option value="city">City</option>
                 </select>
             </div>
-            
             <div class="form-group">
                 <label class="form-label">Location Detail</label>
                 <input type="text" id="searchInput" list="dynamicOptions" class="form-input" placeholder="Type to search..." autocomplete="off">
                 <datalist id="dynamicOptions"></datalist>
             </div>
-
             <button class="btn-search" onclick="performSearch()">Find Hospitals</button>
         </div>
 
@@ -416,31 +408,24 @@
         </div>
 
         <div id="tab-lists" class="tab-content">
-            
             <div class="file-item">
                 <div class="file-icon">📑</div><div class="file-info"><span class="file-name">Annexure II</span><span class="file-meta">Non-Payable Items</span></div>
                 <div class="action-buttons"><a href="Annex II.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('Annex II.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-
             <div class="file-item">
                 <div class="file-icon">📋</div><div class="file-info"><span class="file-name">Specific List</span><span class="file-meta">All Policies</span></div>
                 <div class="action-buttons"><a href="Specific_List.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('Specific_List.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-
             <div class="file-item">
                 <div class="file-icon">✖️</div><div class="file-info"><span class="file-name">Health Multiplier</span><span class="file-meta">Super Health</span></div>
                 <div class="action-buttons"><a href="SuperHealth_Multiplier.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('SuperHealth_Multiplier.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-            
             <div class="file-item">
                 <div class="file-icon">✈️</div><div class="file-info"><span class="file-name">Medical Treatment Abroad</span><span class="file-meta">Super Health</span></div>
                 <div class="action-buttons"><a href="SuperHealth_Abroad.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('SuperHealth_Abroad.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-            
             <div class="file-item">
                 <div class="file-icon">🪂</div><div class="file-info"><span class="file-name">Adventure Sports</span><span class="file-meta">Health Alpha</span></div>
                 <div class="action-buttons"><a href="Alpha_Adventure.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('Alpha_Adventure.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-
             <div class="file-item">
                 <div class="file-icon">🏋️</div><div class="file-info"><span class="file-name">Gym & Sports Injury</span><span class="file-meta">Health Alpha</span></div>
                 <div class="action-buttons"><a href="Alpha_Gym.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('Alpha_Gym.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
-            
             <div class="file-item">
                 <div class="file-icon">🌍</div><div class="file-info"><span class="file-name">Global Cover</span><span class="file-meta">Health Alpha</span></div>
                 <div class="action-buttons"><a href="Alpha_Global.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('Alpha_Global.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
@@ -453,6 +438,43 @@
             <div class="file-item">
                 <div class="file-icon">🏥</div><div class="file-info"><span class="file-name">Claim Form</span><span class="file-meta">Reimbursement</span></div>
                 <div class="action-buttons"><a href="claim_form.pdf" download class="interact-btn btn-dl" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a><button class="interact-btn btn-wa" onclick="shareSmart('claim_form.pdf')" title="Share"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button></div></div>
+        </div>
+
+    </div>
+
+    <div id="support" class="page">
+        <div class="nav-header"><button class="back-btn" onclick="navigate('home')">&#8592;</button><div class="page-title">Support</div></div>
+        <div class="section-label" style="margin-top:0;">For Intermediaries</div>
+        <div class="support-card">
+            <div class="support-header"><div class="support-icon">🤝</div><div class="support-title">Agents & Partners</div></div>
+            <div class="support-row">
+                <div><div class="contact-label">Helpdesk (24/7)</div><a href="tel:1800221111" class="contact-value">1800 22 1111</a></div>
+                <a href="tel:1800221111" class="interact-btn btn-call" title="Call Now">📞</a>
+            </div>
+        </div>
+        <div class="section-label">For Customers (Claims)</div>
+        <div class="support-card">
+            <div class="support-header"><div class="support-icon">🏥</div><div class="support-title">Health Claims</div></div>
+            <div class="support-row">
+                <div><div class="contact-label">Toll Free (24/7)</div><div class="contact-value"><a href="tel:18002103366" class="contact-link">1800 210 3366</a></div><div class="contact-value"><a href="tel:18002106366" class="contact-link">1800 210 6366</a></div></div>
+                <a href="tel:18002103366" class="interact-btn btn-call" title="Call Now">📞</a>
+            </div>
+            <div class="support-row"><div><div class="contact-label">Email ID</div><a href="mailto:sbig.health@sbigeneral.in" class="email-link">sbig.health@sbigeneral.in</a></div></div>
+        </div>
+        <div class="section-label">For Any Query</div>
+        <div class="support-card">
+            <div class="support-header"><div class="support-icon">📞</div><div class="support-title">Customer Care</div></div>
+            <div class="support-row"><div><div class="contact-label">Toll Free</div><a href="tel:18001021111" class="contact-value">1800 102 1111</a></div></div>
+            <div class="support-row"><div><div class="contact-label">Email ID</div><a href="mailto:customer.care@sbigeneral.in" class="email-link">customer.care@sbigeneral.in</a></div></div>
+        </div>
+        <div class="section-label">Downloads</div>
+        <div class="file-item" style="border: 1px solid var(--accent);">
+            <div class="file-icon" style="background:#fdf2f8; color:var(--accent);">📄</div>
+            <div class="file-info"><span class="file-name" style="color:var(--accent);">Claim Form</span><span class="file-meta">Reimbursement</span></div>
+            <div class="action-buttons">
+                <a href="claim_form.pdf" download class="interact-btn btn-dl" style="background:var(--accent);" title="Download"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+                <button class="interact-btn btn-wa" onclick="shareSmart('Claim Form')" title="Share on WhatsApp"><svg class="btn-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></button>
+            </div>
         </div>
     </div>
 
@@ -612,6 +634,7 @@
             return String(rawVal).toLowerCase().includes(val);
         });
 
+        // Show Count and PDF Button
         header.style.display = 'flex';
         countDisplay.innerText = `Found: ${results.length} Hospitals`;
 
@@ -661,6 +684,30 @@
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
         html2pdf().set(opt).from(element).save();
+    }
+    
+    /* --- SHARE SMART LOGIC (Restored with Fix) --- */
+    async function shareSmart(fileName) {
+        const url = fileName; 
+        try {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            const file = new File([blob], fileName, { type: 'application/pdf' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                await navigator.share({
+                    files: [file],
+                    title: fileName,
+                    text: `Please find the attached ${fileName}.`
+                });
+            } else {
+                alert("File sharing is not supported on this device/browser. Opening file instead.");
+                window.open(url, '_blank');
+            }
+        } catch (error) {
+            console.error('Sharing failed:', error);
+            const text = `I wanted to share ${fileName} with you.`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
     }
 </script>
 </body>
